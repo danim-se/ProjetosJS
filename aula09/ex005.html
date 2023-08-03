@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+    <style>
+      body{
+        background-color: rgb(20, 101, 155);
+        color: aliceblue;
+        font: normal 10pt Arial;
+ 
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos  DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+ // conseguimos ter acesso a todos os elementos usando o getElementsByTagName
+       
+          
+      var corpo = windpw.document.body
+      var p1 = window.document.getElementsByTagName('p')[1] 
+       
+    //seleciona o priemiro paragrafo usa o [0] o 2°: [1]
+
+       // window.document.write('Esta escrtio assim ' + p1.innerText) //mostra o que esta escrito no primeiro paragrafo
+       // p1.style.color = 'blue' //muda a cor do paragrafo 
+       // corpo.style.background = 'black' // muda cor do body
+    /*
+       var d = window.document.getElementById('msg')
+       d.style.background = 'green'
+      //d.innerText = 'Estou aguardando'
+       window.document.getElementById('msg').innerText = 'Ola'
+      */
+    
+
+      var d = window.document.querySelector('div#msg')
+      d.style.color = 'blue'
+
+    </script>
+    
+</body>
+</html>

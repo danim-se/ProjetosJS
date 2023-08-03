@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu País de origem: <input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="Verificar Nação" onclick="calcular()">
+    <div id="con"></div>
+
+    <script>
+        function calcular(){
+            var BR = 'Brasil'
+            var txtpa = document.querySelector('input#txtpa')
+            var con = document.querySelector('div#con')
+            var c = String(txtpa.value)
+           
+            
+            if (c = BR){
+                con.innerHTML = `Você nasceu no Brasil então você é Brasileiro!!`
+
+            } else if(c != BR){
+                con.innerHTML = 'Você é estrangeiro'
+            }
+
+        }
+    
+    
+    </script>
+
+    
+</body>
+</html>
